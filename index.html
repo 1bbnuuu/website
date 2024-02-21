@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=VT323&display=swap');
+        body{
+            background-color: black;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover{
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .left{
+            margin-left: 20px;
+        }
+        .right{
+            width: 35%;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 20px;
+        }
+        .right a{
+            display: flex;
+            align-items: center;
+        }
+        section{
+            width: 100%;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+        .container-1{
+            margin-top: 10%;
+            display: flex;
+            width: 50%;
+        }
+        .container-1 h3{
+            color: rgb(255, 255, 255);
+        }
+        .container-2{
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container-2 h1{
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            font-size: 140px;
+            color: white;
+        }
+        .date{
+            font-size: 25px;
+            color: white;
+            text-align: right;
+        }
+        .time{
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.336);
+            text-align: right;
+        }
+        .container-3{
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 40px;
+        }
+        .container-3 .box{
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .box img{
+            width: 100%;
+            border-radius: 25px;
+        }
+        .box h3{
+            color: white;
+            font-size: 25px;
+        }
+        @media only screen and (max-width: 1000px){
+            nav{
+                background-color: white;
+                
+            }
+            nav a{
+                font-size: 16px;
+                color: black;
+                font-weight: 800;
+            }
+            .container-1{
+                width: 100%;
+                text-align: center;
+            }
+            .container-1 h3{
+                font-size: 15px;
+            }
+            .container-2{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .container-2 h1{
+                font-size: 75px;
+                font-weight: 600;
+            }
+            .date{
+                text-align: center;
+                margin-bottom: 0;
+                font-size: 25px;
+            }
+            .time{
+                text-align: center;
+                margin-top: 0;
+                font-size: 12px;
+            }
+            .box h3{
+                font-size: 15px;
+            }
+        }
+        @media only screen and (max-width: 674px){
+            nav{
+                background-color: white;
+                
+            }
+            nav a{
+                font-size: 14px;
+                color: black;
+                font-weight: 800;
+            }
+            .container-1 h3{
+                font-size: 15px;
+            }
+            .container-2 h1{
+                font-size: 50px;
+                font-weight: 600;
+            }
+            .date{
+                text-align: center;
+                margin-bottom: 0;
+                font-size: 25px;
+            }
+            .time{
+                text-align: center;
+                margin-top: 0;
+                font-size: 12px;
+            }
+            .box h3{
+                font-size: 15px;
+            }
+            .container-3 .box{
+                width: 48%;
+                
+            }
+        }
+        @media only screen and (max-width: 470px){
+            nav{
+                background-color: white;
+                
+            }
+            nav a{
+                font-size: 10px;
+                color: black;
+                font-weight: 800;
+            }
+            .container-1 h3{
+                font-size: 12px;
+            }
+            .container-2 h1{
+                font-size: 40px;
+                font-weight: 600;
+            }
+            .date{
+                font-size: 20px;
+            }
+            .time{
+                font-size: 10px;
+            }
+            .box h3{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <a href="#" class="left">Oslo</a>
+        <div class="right">
+            <a href="#">Work</a>
+            <a href="#">Studio</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="#" class="login">Remix</a>
+    </nav>
+</header>
+<body>
+    <section>
+        <div class="container-1">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt temporibus excepturi amet accusantium iusto cupiditate harum cum consequatur provident quo iste.</h3>
+        </div>
+        <div class="container-2">
+            <h1>Product Design Experience</h1>
+        </div>
+        <h3 class="date">Ibnu Rofik</h3>
+        <h3 class="time">12 Febuari 2024</h3>
+        <div class="container-3">
+            <div class="box">
+                <img src="Designers.jpeg" alt="">
+                <h3>Example Project Header</h3>
+            </div>
+            <div class="box">
+                <img src="Designers.jpeg" alt="">
+                <h3>Example Project Header</h3>
+            </div>
+            <div class="box">
+                <img src="Designers.jpeg" alt="">
+                <h3>Example Project Header</h3>
+            </div>
+            <div class="box">
+                <img src="Designers.jpeg" alt="">
+                <h3>Example Project Header</h3>
+            </div>
+        </div>
+        </section>
+</body>
+</html>
